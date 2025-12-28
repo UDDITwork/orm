@@ -3,12 +3,16 @@ node_modules/
 server/node_modules/
 client/node_modules/
 
-# Environment variables - ALL .env files and variations
+# Environment variables - ALL .env files and variations (except .env.example)
 .env
 .env.*
 *.env
 server/.env
-server/.env.*
+server/.env.local
+server/.env.development
+server/.env.production
+server/.env.test
+server/.env.staging
 client/.env
 client/.env.*
 .env.local
@@ -16,6 +20,11 @@ client/.env.*
 .env.production
 .env.test
 .env.staging
+
+# Allow .env.example files (template files should be committed)
+!.env.example
+!server/.env.example
+!client/.env.example
 
 # Build outputs
 client/build/
