@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bookman Old Style', 'Book Antiqua', 'Palatino Linotype', 'Palatino', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f5f1e8;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.02) 2px,
+      rgba(0, 0, 0, 0.02) 4px
+    );
+  min-height: 100vh;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}

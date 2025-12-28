@@ -1,0 +1,110 @@
+.company-search {
+  margin-bottom: 40px;
+}
+
+.search-card {
+  background: #ffffff;
+  border: 3px solid #1a1a1a;
+  padding: 40px;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+  border-top: 6px solid #1a1a1a;
+}
+
+.search-card h2 {
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 15px;
+  font-family: 'Bookman Old Style', serif;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-weight: 700;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Bookman Old Style', serif;
+}
+
+.form-group input {
+  padding: 14px 18px;
+  border: 2px solid #1a1a1a;
+  background: #ffffff;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  font-family: 'Bookman Old Style', serif;
+  color: #1a1a1a;
+}
+
+.form-group input:focus {
+  outline: none;
+  border: 3px solid #1a1a1a;
+  background: #fafafa;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:disabled {
+  background: #e8e8e8;
+  cursor: not-allowed;
+  border-color: #666;
+}
+
+.analyze-button {
+  background: #1a1a1a;
+  color: #ffffff;
+  border: 3px solid #1a1a1a;
+  padding: 18px 40px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Bookman Old Style', serif;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.analyze-button:hover:not(:disabled) {
+  background: #2a2a2a;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3);
+  transform: translate(-2px, -2px);
+}
+
+.analyze-button:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.analyze-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #666;
+}
+
+@media (max-width: 768px) {
+  .search-card {
+    padding: 25px;
+  }
+  
+  .search-card h2 {
+    font-size: 1.5rem;
+  }
+}

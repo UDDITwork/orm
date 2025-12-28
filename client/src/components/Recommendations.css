@@ -1,0 +1,85 @@
+.recommendations {
+  margin-top: 35px;
+}
+
+.recommendations-card {
+  background: #ffffff;
+  border: 3px solid #1a1a1a;
+  padding: 35px;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+  border-top: 6px solid #1a1a1a;
+}
+
+.recommendations-card h3 {
+  color: #1a1a1a;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family: 'Bookman Old Style', serif;
+  border-bottom: 3px solid #1a1a1a;
+  padding-bottom: 18px;
+}
+
+.recommendations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recommendation-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 25px;
+  background: #f5f1e8;
+  border: 3px solid #1a1a1a;
+  border-left: 6px solid #1a1a1a;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recommendation-item:hover {
+  transform: translate(3px, -2px);
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.recommendation-number {
+  background: #1a1a1a;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+  font-size: 1rem;
+  border: 2px solid #1a1a1a;
+  font-family: 'Bookman Old Style', serif;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.recommendation-text {
+  flex: 1;
+  color: #1a1a1a;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  padding-top: 6px;
+  font-family: 'Bookman Old Style', serif;
+}
+
+@media (max-width: 768px) {
+  .recommendations-card {
+    padding: 25px;
+  }
+  
+  .recommendation-item {
+    padding: 20px;
+    flex-direction: column;
+  }
+  
+  .recommendation-number {
+    align-self: flex-start;
+  }
+}
